@@ -16,7 +16,7 @@
         "sandbox": {
             "modules": {
                 "http": "http",
-                "uuid": "node-uuid"
+                "uuid": "uuid"
             },
             "foo": "bar",
             "bool": true,

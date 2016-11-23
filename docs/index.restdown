@@ -449,7 +449,7 @@ relevant sections included:
         "sandbox": {
             "modules": {
                 "http": "http",
-                "uuid": "node-uuid"
+                "uuid": "uuid"
             },
             "foo": "bar",
             "bool": true,
@@ -519,7 +519,7 @@ required.
   VM where we run our tasks. The key for each member will be the identifier for 
   referring to each object inside a task's `body` and `fallback` functions,
   while the value is what the system will use to require the module.
-  For example: `{uuid: 'node-uuid'}`.
+  For example: `{uuid: 'uuid'}`.
 
   Remember that, by default, only [global node timers](http://nodejs.org/docs/latest/api/timers.html)
   will be available for tasks if nothing is given.

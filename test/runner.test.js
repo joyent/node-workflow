@@ -3,7 +3,7 @@ var util = require('util');
 var path = require('path');
 var fs = require('fs');
 var test = require('tap').test;
-var uuid = require('node-uuid');
+var uuid = require('uuid');
 var WorkflowRunner = require('../lib/runner');
 var Factory = require('../lib/index').Factory;
 var exists = fs.exists || path.exists;
@@ -56,12 +56,12 @@ var taskWithModules = {
     retry: 1,
     body: function (job, cb) {
         if (typeof (uuid) !== 'function') {
-            return cb('node-uuid module is not defined');
+            return cb('uuid module is not defined');
         }
         return cb(null);
     },
     modules: {
-        uuid: 'node-uuid'
+        uuid: 'uuid'
     }
 };
 var okWf, failWf, theJob, failWfWithError, failWfWithRetry;

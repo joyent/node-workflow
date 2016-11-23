@@ -1,6 +1,6 @@
 // Copyright 2012 Pedro P. Candel <kusorbox@gmail.com>. All rights reserved.
 var test = require('tap').test,
-    uuid = require('node-uuid'),
+    uuid = require('uuid'),
     SOCKET = '/tmp/.' + uuid(),
     util = require('util'),
     path = require('path'),

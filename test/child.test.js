@@ -1,7 +1,7 @@
 // Copyright 2012 Pedro P. Candel <kusorbox@gmail.com>. All rights reserved.
 var util = require('util'),
     test = require('tap').test,
-    uuid = require('node-uuid'),
+    uuid = require('uuid'),
     fork = require('child_process').fork;
 
 var job = {
